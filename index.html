@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Genera tu plan personalizado de pérdida de grasa o ganancia muscular: entrenamiento, cardio, alimentación por presupuesto y seguimiento. Funciona sin conexión.">
+<meta name="theme-color" content="#05090C">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Transformación">
+<title>Transformación · Tu plan personal</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/img/icono-192.png">
+<link rel="apple-touch-icon" href="assets/img/icono-192.png">
+<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="vendor/icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+<!-- ==================== Cabecera ==================== -->
+<header class="barra-sup">
+  <div class="d-flex align-items-center justify-content-between" style="max-width:1180px;margin:0 auto">
+    <div class="marca">
+      <div class="marca__logo">17</div>
+      <div>
+        <div class="marca__txt">Transformación</div>
+        <div class="marca__sub" id="marca-sub">Tu plan</div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center gap-2 pe-3">
+      <button class="btn btn-linea btn-sm" onclick="Cronos.abrirDescanso()" title="Temporizador de descanso" aria-label="Temporizador de descanso">
+        <i class="bi bi-hourglass-split"></i>
+      </button>
+      <button class="btn btn-linea btn-sm" onclick="Cronos.abrirCrono()" title="Cronómetro" aria-label="Cronómetro">
+        <i class="bi bi-stopwatch"></i>
+      </button>
+    </div>
+  </div>
+  <nav class="nav-pestanas" id="nav-pestanas" role="tablist" aria-label="Secciones"></nav>
+</header>
+
+<!-- ==================== Contenido ==================== -->
+<main class="contenido">
+  <section class="seccion visible" id="sec-inicio"        role="tabpanel" aria-label="Inicio"></section>
+  <section class="seccion"         id="sec-entrenamiento" role="tabpanel" aria-label="Entrenamiento"></section>
+  <section class="seccion"         id="sec-cardio"        role="tabpanel" aria-label="Cardio"></section>
+  <section class="seccion"         id="sec-alimentacion"  role="tabpanel" aria-label="Alimentación"></section>
+  <section class="seccion"         id="sec-mercado"       role="tabpanel" aria-label="Lista de mercado"></section>
+  <section class="seccion"         id="sec-recetas"       role="tabpanel" aria-label="Recetas"></section>
+  <section class="seccion"         id="sec-suplementos"   role="tabpanel" aria-label="Suplementos"></section>
+  <section class="seccion"         id="sec-calculadoras"  role="tabpanel" aria-label="Calculadoras"></section>
+  <section class="seccion"         id="sec-seguimiento"   role="tabpanel" aria-label="Seguimiento"></section>
+  <section class="seccion"         id="sec-calendario"    role="tabpanel" aria-label="Calendario"></section>
+  <section class="seccion"         id="sec-estadisticas"  role="tabpanel" aria-label="Estadísticas"></section>
+  <section class="seccion"         id="sec-configuracion" role="tabpanel" aria-label="Ajustes"></section>
+</main>
+
+<div id="avisos" aria-live="polite"></div>
+
+<!-- ==================== Librerías locales ==================== -->
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="vendor/chartjs/chart.umd.js"></script>
+
+<!-- ==================== Datos y módulos ==================== -->
+<script src="assets/js/nucleo.js"></script>
+<script src="assets/js/datos-entreno.js"></script>
+<script src="assets/js/datos-nutricion.js"></script>
+<script src="assets/js/datos-mercado.js"></script>
+<script src="assets/js/plan.js"></script>
+<script src="assets/js/svg-ejercicios.js"></script>
+<script src="assets/js/herramientas.js"></script>
+<script src="assets/js/seguimiento.js"></script>
+<script src="assets/js/vistas.js"></script>
+<script src="assets/js/asistente.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
